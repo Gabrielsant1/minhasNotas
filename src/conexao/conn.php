@@ -7,14 +7,14 @@
         error_reporting(E_ALL);
 
         // Criação de variáveis pra acesso ao banco de dados
-        $hostname = "localhost";
+        $hostname = "127.0.0.1";
         $username = "root";
-        $database = "minhasnotas";
         $password = "";
+        $database = "minhasnotas";
         
 
         if($conecta = mysqli_connect($hostname, $username, $password, $database)){
-            // echo "Conexão com o Banco de Dados " .$database. " efetuado com sucesso!";
+            echo "Conexão com o Banco de Dados " .$database. " efetuado com sucesso!";
         }else{
             echo "Erro: " .mysqli_connect_error();
         }
